@@ -1,0 +1,304 @@
+.container{
+  width: 60%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.linksDropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.linksDropdown:hover {
+  background-color: rgb(156, 156, 156);
+}
+
+.linksDropdown:hover h2{
+  color: black;
+  cursor: default;
+}
+
+.linksDropdown-Content{
+  display: none;
+  min-width: 120px;
+  position: absolute;
+  z-index: 1;
+}
+
+button {
+  border-style: none;
+  border-bottom: solid 1px rgba(180, 180, 180, 0.496);
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(222, 222, 222);
+  color: black;
+}
+
+.linksDropdown:hover .linksDropdown-Content{
+  display: block;
+}
+
+.titlePicContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.imgContainer {
+  flex-grow: 5;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.scpImg {
+  width: 300px;
+  height: 300px;
+}
+
+.titleContainer {
+  flex-grow: 5;
+  color: white;
+  padding-top: 80px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.landingImgContainer {
+  text-align: center;
+  padding-top: 200px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.landingImg {
+  width: 40%;
+  height: auto;
+}
+
+.banner {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.containment {
+  color: white;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.description {
+  color: white;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 25px;
+}
+
+.scpHeading {
+  height: 57px;
+  align-self: center;
+  margin-right: 30px;
+}
+
+.scpHeadingSmall {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  user-select: none;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(213, 213, 213);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container{
+    width: 80%;
+  }
+
+  .landingImgContainer {
+    padding-top: 150px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .titlePicContainer {
+    flex-direction: column;
+  }
+
+  .titleContainer {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+
+  ul {
+    padding-left: 0px;
+  }
+
+  .scpHeading {
+    height: auto;
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .landingImg {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .scpHeading {
+    height: auto;
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .scpImg {
+    width: 200px;
+    height: 200px;
+  }
+
+  p {
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .scpHeading {
+    display: none;
+  }
+  
+  .scpHeadingSmall {
+    display: block;
+    align-self: center;
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .linksDropdown-Content{
+    min-width: 100px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .landingImg {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .scpHeading {
+    height: auto;
+    width: 120px;
+  }
+
+  .linksDropdown-Content{
+    min-width: 80px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+
+  .scpImg {
+    width: 150px;
+    height: 150px;
+  }
+}
